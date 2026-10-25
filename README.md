@@ -23,18 +23,7 @@ Trước khi chạy website, cần chuẩn bị:
 
 ## ⚙️ Hướng dẫn cài đặt và chạy chương trình
 
-### Bước 1: Tải mã nguồn
-
-Mở PowerShell hoặc terminal và chạy:
-
-```powershell
-git clone https://github.com/Yuzsiu/KTPM-Nhom3.git
-cd KTPM-Nhom3
-```
-
-Nếu đã tải repository về máy thì bỏ qua bước clone.
-
-### Bước 2: Khởi tạo cơ sở dữ liệu
+### Bước 1: Khởi tạo cơ sở dữ liệu
 
 1. Khởi động **MySQL Server** và mở MySQL Workbench (hoặc công cụ tương đương).
 2. Tạo database bằng câu lệnh:
@@ -49,7 +38,7 @@ COLLATE utf8mb4_unicode_ci;
 
 **Lưu ý:** Nếu database đã có dữ liệu, hãy sao lưu trước khi chạy lại file SQL. Không cần import lại nếu database trên máy đã được khởi tạo đầy đủ.
 
-### Bước 3: Cấu hình kết nối MySQL
+### Bước 2: Cấu hình kết nối MySQL
 
 Mở thư mục `website-ban-laptop` trong IDE, sau đó mở file:
 
@@ -73,7 +62,7 @@ Lệnh này áp dụng cho phiên PowerShell hiện tại. Nếu chạy website 
 
 > Không ghi mật khẩu MySQL trực tiếp vào mã nguồn hoặc đẩy mật khẩu lên GitHub.
 
-### Bước 4: Chạy ứng dụng
+### Bước 3: Chạy ứng dụng
 
 **Cách 1: Chạy bằng IDE**
 
@@ -100,7 +89,7 @@ export DB_PASSWORD='mat_khau_mysql_cua_ban'
 ./mvnw spring-boot:run
 ```
 
-### Bước 5: Truy cập website
+### Bước 4: Truy cập website
 
 Khi ứng dụng khởi động thành công, mở trình duyệt tại:
 
